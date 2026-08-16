@@ -24,7 +24,7 @@ jobs:
       run: |
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH /tmp/openwrt
         rm -rf *
-        cp -rf /tmp/openwrt/package/network/utils/fullconenat* ./
+        cp -rf /tmp/openwrt/package/network/services/fullconenat* ./
 
     - name: Creat Message
       id: msg
